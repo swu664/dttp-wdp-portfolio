@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+form label, 
+form input {
+    display: block; /* Makes each element take up the full width */
+    margin-bottom: 10px; /* Adds some space below each element */
+}
+
+form input[type="submit"] {
+    width: auto; /* Keeps the submit button from stretching */
+}
+
+header {
+    color: #eee;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    background-color: #333333;
+}
