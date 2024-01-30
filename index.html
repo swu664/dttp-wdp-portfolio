@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Scarlett's Bibliography</title>
-        <link rel="stylesheet" type="text/css" href="website.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <div id="contentContainer">
-        <div id="imgContainer">
-            <img src="IMG_3366.jpeg" alt="An Image of Myself at Home" id="responsiveImage">
-        </div>
-        <div id="textContainer">
-            <body>
-                <h1>Welcome!</h1>
-                <h2>About Me</h2>
+    <header>
+        <h1>Student Bio</h1>
+    </header>
+    <body>
+        <div class="container">
+            <section id="bio-image">
+                <h2>Scarlett</h1>
+                <img src="IMG_3366.jpeg" alt="An Image of Scarlett" id="responsiveImage">
+            </section>
+            <section id="main-bio">
                 <p>Hello, my name is Scarlett.<br>
                     I am currently in my third year at Western University, 
                     pursuing a dual degree in software engineering and business.
@@ -19,15 +23,15 @@
                     and this is the first assignment! I also attended SheHacks a couple weeks ago,
                     and learned quite a bit about CSS, which I have applied a bit here!
                 </p>
-                <h2>Learnings</h2>
-                <p>
-                    <ul>
-                        <li>remember to link the css to the html</li>
-                        <li>used the div tag to section each part of the website, i.e., image, text, content</li>
-                        <li>used flexbox for the layout with the image on the left and content on the right</li>
-                    </ul>
-                </p>
-            </body>
+            </section>
+            <section id="contact-info">
+                <h2>Contact Info</h1>
+                <ul>
+                    <li>Email: <a href="mailto:scarley@live.ca">scarley@live.ca</a></li>
+                    <li>Github: swu664</li>
+                    <li>Portfolio: Coming soon</li>
+                </ul>
+            </section>
         </div>
-    </div>
+    </body>
 </html>
