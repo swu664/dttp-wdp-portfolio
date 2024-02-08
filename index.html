@@ -2,21 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- for mobile responsiveness, you need this meta tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- this link tag displays a little icon in the tab of your active browser window.
+            It's called a "favicon" (favorite icon)-->
+        <link rel="icon" type="image/gif" href="images/favicon.gif">
         <title>Scarlett's Personal Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
-    <header>
-        <h1>Student Bio</h1>
-    </header>
     <body>
-        <div class="top-navigation">
-            <a href="index.html">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Experiences</a>
-            <a href="#" id="contact-link">Let's Connect!</a>
-        </div>
-        <div class="container">
+        <header>
+            <h1>Student Bio</h1>
+            <h2 style="text-align: center;" id="deviceName"></h2>
+        </header>
+        <nav>
+            <div class="top-navigation">
+                <a href="index.html">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Experiences</a>
+                <a href="#" id="contact-link">Let's Connect!</a>
+            </div>
+        </nav>
+        <main>
             <section id="bio-image">
                 <h2>Scarlett</h1>
                 <img src="images/IMG_3366.jpeg" alt="An Image of Scarlett" id="responsiveImage">
@@ -36,6 +43,11 @@
                     <li>Portfolio: coming soon</li>
                 </ul>
             </section>
-        </div>
+        </main>
+        <!-- hint: I can place a script tag here to load an external javascript file as well as place it in the head tags. 
+            Placing it here ensure that all the elements of my web page are rendered first, 
+            so that the javascript code can recognize the elenents above the closed body tag :) -->
+        <script src="js/device.js">
+        </script>
     </body>
 </html>
