@@ -44,4 +44,27 @@
     color: white;
     background-color: grey;
     border: 2px solid white;
-  }
+}
+/*image*/
+.flex-container {
+    display: flex;
+    flex-direction: row wrap;
+    margin: 10px;
+}
+.flex-container > div {
+    text-align: center;
+    padding: 0 4px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#responsive-image-first {
+    width: 100%;
+}
+#responsive-image {
+    max-width: 50%; /* Maximum width of the image is 100% of the viewport width */
+    max-height: 100%; /* Maximum height of the image is 100% of the viewport height */
+    width: auto; /* Let the browser handle the width automatically */
+    height: auto; /* Let the browser handle the height automatically */
+    margin: 0 auto; /* Center the image horizontally */
+}

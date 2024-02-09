@@ -15,21 +15,21 @@
             <h1></h1>
             <h2 style="text-align: center;" id="deviceName"></h2>
             <!--navigation bar-->
-            <nav>
-                <div class="top-navigation">
-                    <a href="index.html">Home</a>
-                    <a href="#about-me">About Me</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact-info">Contact</a>
-                    <a href="pages/contact-us.html" id="contact-link">Let's Connect!</a>
-                </div>
-            </nav>
+            <div class="top-navigation">
+                <a href="index.html">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-info">Contact</a>
+                <a href="pages/contact-us.html" id="contact-link">Let's Connect!</a>
+            </div>
         </header>
         <main>
             <!--content sections-->
-            <section id="introduction">
-                <h1>Hello, my name is Scarlett.</h1>
-                <img src="images/IMG_3366.jpeg" alt="An Image of Scarlett" id="responsiveImage">
+            <section class="flex-container" id="introduction">
+                <div>
+                    <h1>Hello, my name is Scarlett.</h1>
+                </div>
+                <img src="images/IMG_3366.jpeg" alt="An Image of Scarlett" id="responsive-image">
             </section>
             <section id="about-me">
                 <h2>About Me</h2>
@@ -40,27 +40,28 @@
             </section>
             <section id="work">
                 <h2>Work</h2>
-                <div class="flex">
-                    <h3>JS Financial Analysis</h3>
-                    <p>HTML| Javascript</p>
-                    <a href="https://github.com/swu664/js-financial-analysis">
-                        <img src="images/js-financial-analysis.png" alt="An Image of TravelBuddy" id="responsiveImage">
-                    </a>
-                    
-                </div>
-                <div class="flex">
-                    <h3>TravelBuddy</h3>
-                    <p>React| Javascript| CSS</p>
-                    <a href="https://devpost.com/software/travel-buddy-rc2gyj">
-                        <img src="images/travel-buddy.jpg" alt="An Image of TravelBuddy" id="responsiveImage">
-                    </a>
-                </div>
-                <div class="flex">
-                    <h3>iFinance</h3>
-                    <p>Java| JavaFX Scene Builder| SQL</p>
-                    <a href="https://github.com/swu664/js-financial-analysis">
-                        <img src="images/ifinance.png" alt="An Image of TravelBuddy" id="responsiveImage">
-                    </a>
+                <div class="flex-container">
+                    <div>
+                        <h3>JS Financial Analysis</h3>
+                        <p>HTML | Javascript</p>
+                        <a href="https://swu664.github.io/js-financial-analysis/">
+                            <img src="images/js-financial-analysis.png" alt="An Image of JS Financial Analysis" id="responsive-image-first">
+                        </a>
+                    </div>
+                    <div>
+                        <h3>TravelBuddy</h3>
+                        <p>React | Javascript | CSS</p>
+                        <a href="https://devpost.com/software/travel-buddy-rc2gyj">
+                            <img src="images/travel-buddy.jpg" alt="An Image of TravelBuddy" id="responsive-image">
+                        </a>
+                    </div>
+                    <div>
+                        <h3>iFinance</h3>
+                        <p>Java | JavaFX Scene Builder | SQL</p>
+                        <a href="https://github.com/swu664/js-financial-analysis">
+                            <img src="images/ifinance.png" alt="An Image of iFinance" id="responsive-image">
+                        </a>
+                    </div>
                 </div>
             </section>
             <section id="contact-info">
@@ -68,7 +69,6 @@
                 <a href="pages/contact-us.html">Email</a>
                 <a href="https://www.linkedin.com/in/wu-scarlett">Linkedin</a>
                 <a href="https://github.com/swu664">Github</a>
-                </ul>
             </section>
         </main>
         <!-- hint: I can place a script tag here to load an external javascript file as well as place it in the head tags. 
