@@ -1,19 +1,3 @@
-@media screen and (min-width: 320px) and (max-width: 480px){
-    /* mobile devices */
-}
-@media screen and (min-width: 481px) and (max-width: 768px){
-    /* small ipads and small android tablets */
-}
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    /* laptops and and small screens */
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px){
-    /* large screens and desktops */
-}
-@media screen and (min-width: 1201px) and (orientation: landscape){
-    /* large LCD screens and beyond */
-}
-
 /*navigation bar*/
 .top-navigation {
     overflow: hidden;
@@ -45,26 +29,45 @@
     background-color: grey;
     border: 2px solid white;
 }
-/*image*/
-.flex-container {
-    display: flex;
-    flex-direction: row wrap;
-    margin: 10px;
+#self-image {
+    max-width: 50%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
 }
-.flex-container > div {
-    text-align: center;
-    padding: 0 4px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-}
-#responsive-image-first {
+/* Set full-width class for the first div */
+.full-width {
     width: 100%;
 }
-#responsive-image {
-    max-width: 50%; /* Maximum width of the image is 100% of the viewport width */
-    max-height: 100%; /* Maximum height of the image is 100% of the viewport height */
-    width: auto; /* Let the browser handle the width automatically */
-    height: auto; /* Let the browser handle the height automatically */
-    margin: 0 auto; /* Center the image horizontally */
+.full-width > img{
+    max-width: 100%; /* Set max-width to ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Set width for the images in the flex container */
+.flex-container > div > a > img {
+    max-width: 100%; /* Set max-width to ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Set flex-container to flexbox and wrap items */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Set width for the divs within flex-container */
+.flex-container > div {
+    width: 100%; /* Initially set to 100% for all divs */
+    box-sizing: border-box;
+    padding: 0 10px; /* Add padding for spacing */
+}
+
+/* Adjust width for divs on larger screens */
+@media screen and (min-width: 768px) {
+    .flex-container > div {
+        width: 50%; /* Set to 50% for divs on larger screens */
+    }
 }
