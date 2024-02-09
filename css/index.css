@@ -1,48 +1,74 @@
-body {
-    background-color: #efeee7;
-    font: Georgia,"Times New Roman",Times,serif;
-    color: #333333;
-    margin: 0;
-    padding: 0;
+/*navigation bar*/
+.top-navigation {
+    overflow: hidden;
+    margin: auto;
 }
-header {
-    background-color: #333333;
-}
-h1 {
-    color: #eee;
-    font-size: 28px;
+.top-navigation a {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    color: grey;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-h2 {
-    font-size: 24px;
+.top-navigation a:hover {
+    color: black;
 }
-
-.container {
-    width: 100%;/*changed from 1024px to 100% so that everything can fit any screen*/
+#contact-link{
+    float: right;
+}
+#contact-link:link, #contact-link:visited {
+    border: 2px solid grey;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+#contact-link:hover, #contact-link:active {
+    color: white;
+    background-color: grey;
+    border: 2px solid white;
+}
+#self-image {
+    max-width: 50%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     margin: 0 auto;
 }
-#main-bio , #contact-info , #bio-image {
-    float: left;
-    padding-left: 2%;
+/* Set full-width class for the first div */
+.full-width {
+    width: 100%;
+}
+.full-width > img{
+    max-width: 100%; /* Set max-width to ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
 }
 
-#bio-image {
-    width: 200px;
+/* Set width for the images in the flex container */
+.flex-container > div > a > img {
+    max-width: 100%; /* Set max-width to ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
 }
-img {
-    width: 200px;
+
+/* Set flex-container to flexbox and wrap items */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
 }
-#main-bio {
-    padding-top: 40px;
-    width: 50%; /*changed from 70% so that it would fit into columns*/
+
+/* Set width for the divs within flex-container */
+.flex-container > div {
+    width: 100%; /* Initially set to 100% for all divs */
+    box-sizing: border-box;
+    padding: 0 10px; /* Add padding for spacing */
 }
-#contact-info {
-    width: 30%;
-    line-height: 1.5;
-}
-a {
-    color: #d21034;
+
+/* Adjust width for divs on larger screens */
+@media screen and (min-width: 768px) {
+    .flex-container > div {
+        width: 50%; /* Set to 50% for divs on larger screens */
+    }
 }

@@ -2,34 +2,79 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- for mobile responsiveness, you need this meta tag -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <!-- this link tag displays a little icon in the tab of your active browser window.
+            It's called a "favicon" (favorite icon)-->
+        <link rel="icon" type="image/gif" href="images/favicon.gif">
+        <title>Scarlett's Personal Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
-    <header>
-        <h1>Student Bio</h1>
-    </header>
     <body>
-        <div class="container">
-            <section id="bio-image">
-                <h2>Scarlett</h1>
-                <img src="IMG_3366.jpeg" alt="An Image of Scarlett" id="responsiveImage">
+        <header>
+            <h1></h1>
+            <h2 style="text-align: center;" id="deviceName"></h2>
+            <!--navigation bar-->
+            <div class="top-navigation">
+                <a href="index.html">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-info">Contact</a>
+                <a href="pages/contact-us.html" id="contact-link">Let's Connect!</a>
+            </div>
+        </header>
+        <main>
+            <!--content sections-->
+            <section class="flex-container" id="introduction">
+                <div>
+                    <h1>Hello, my name is Scarlett.</h1>
+                </div>
+                <img src="images/IMG_3366.jpeg" alt="An Image of Scarlett" id="self-image">
             </section>
-            <section id="main-bio">
-                <p>Hello, my name is Scarlett.<br>
-                    I am currently in my third year at Western University, 
-                    pursuing a dual degree in software engineering and business.
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>I am currently in my third year at Western University, 
+                    pursuing a dual degree in software engineering and business. 
                     Recently, I have been learning about web development within the DTTP program!
                 </p>
             </section>
-            <section id="contact-info">
-                <h2>Contact Info</h1>
-                <ul>
-                    <li>Email: <a href="contactUs.html">click here</a></li>
-                    <li>Github: swu664</li>
-                    <li>Portfolio: coming soon</li>
-                </ul>
+            <section id="work">
+                <h2>Work</h2>
+                    <div class="full-width">
+                        <h3>JS Financial Analysis</h3>
+                        <p>HTML | Javascript</p>
+                        <a href="https://swu664.github.io/js-financial-analysis/" class="full-width">
+                            <img src="images/js-financial-analysis.png" alt="An Image of JS Financial Analysis" id="responsive-image">
+                        </a>
+                    </div>
+                <div class="flex-container">
+                    <div>
+                        <h3>TravelBuddy</h3>
+                        <p>React | Javascript | CSS</p>
+                        <a href="https://devpost.com/software/travel-buddy-rc2gyj">
+                            <img src="images/travel-buddy.jpg" alt="An Image of TravelBuddy" id="responsive-image">
+                        </a>
+                    </div>
+                    <div>
+                        <h3>iFinance</h3>
+                        <p>Java | JavaFX Scene Builder | SQL</p>
+                        <a href="https://github.com/swu664/js-financial-analysis">
+                            <img src="images/ifinance.png" alt="An Image of iFinance" id="responsive-image">
+                        </a>
+                    </div>
+                </div>
             </section>
-        </div>
+            <section id="contact-info">
+                <h2>Contact Info</h2>
+                <a href="pages/contact-us.html">Email</a>
+                <a href="https://www.linkedin.com/in/wu-scarlett">Linkedin</a>
+                <a href="https://github.com/swu664">Github</a>
+            </section>
+        </main>
+        <!-- hint: I can place a script tag here to load an external javascript file as well as place it in the head tags. 
+            Placing it here ensure that all the elements of my web page are rendered first, 
+            so that the javascript code can recognize the elenents above the closed body tag :) -->
+        <script src="js/device.js">
+        </script>
     </body>
 </html>
